@@ -10,7 +10,12 @@ body {
 
 .wrapper {
   padding: 50px 40px 50px 40px;
+  width: 1440px;
+  margin-left: 250px;
+  margin-right: 250px;
 }
+
+
 
 img[alt="logo"] {
   position: absolute;
