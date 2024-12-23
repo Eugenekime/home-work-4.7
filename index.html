@@ -43,48 +43,64 @@
         </div>
 
         <form action="@">
-          <label for="email">Email</label>
+          <label class="formEmailPhone" for="email">Email</label>
           <input type="text" id="email" name="Email">
           <label for="phone">Phone</label>
           <input type="text" id="phone" name="Phone Number">
         </form>
 
+        <form action="#">
+
+          <h2>What type of investor are you?</h2>
+          <p>Select the type of investor you are below.</p>
+
+          <div class="options_investor">
+
+            <label>
+              <input type="radio" name="investor-type" value="individual" id="Individual">
+              <span>Individual</span>
+              <div class="info">!</div>
+              <div class="additional_information1">
+                I am a natural person investing on my own behalf as a sole owner, joint
+                tenant, or tenant in common.
+              </div>
+            </label>
+
+            <label>
+              <input type="radio" name="investor-type" value="business" id="Business">
+              <span>Business</span>
+              <div class="info">!</div>
+              <div class="additional_information1">
+                I am a natural person investing on my own behalf as a sole owner, joint
+                tenant, or tenant in common.
+              </div>
+            </label>
+
+            <label>
+              <input type="radio" name="investor-type" value="IRA" id="IRA">
+              <span>IRA</span>
+              <div class="info">!</div>
+              <div class="additional_information1">
+                I am a natural person investing on my own behalf as a sole owner, joint
+                tenant, or tenant in common.
+              </div>
+            </label>
+
+            <label>
+              <input type="radio" name="investor-type" value="trust" id="Trust">
+              <span>Trust</span>
+              <div class="info">!</div>
+              <div class="additional_information1">
+                I am a natural person investing on my own behalf as a sole owner, joint
+                tenant, or tenant in common.
+              </div>
+            </label>
+
+          </div>
+        </form>
 
 
-        <h2>What type of investor of you?</h2>
-        <p>Select the type of investor of you are below.</p>
-
-        <div class="options_investor">
-
-          <input type="radio"> <span>Individual<div class="info">!</div>
-            <div class="additional_information1">
-              I am a natural person investing on my own behalf as a sole owner, joint
-              tenant, or tenant in common.
-            </div>
-          </span>
-
-          <input type="radio"> <span>Business<div class="info">!</div>
-            <div class="additional_information1">
-              I am a natural person investing on my own behalf as a sole owner, joint
-              tenant, or tenant in common.
-            </div>
-          </span>
-
-          <input type="radio"> <span>IRA<div class="info">!</div>
-            <div class="additional_information1">
-              I am a natural person investing on my own behalf as a sole owner, joint
-              tenant, or tenant in common.
-            </div>
-          </span>
-
-          <input type="radio"> <span>Trust<div class="info">!</div>
-            <div class="additional_information1">
-              I am a natural person investing on my own behalf as a sole owner, joint
-              tenant, or tenant in common.
-            </div>
-          </span>
-
-
+        <div class="agreeAndButton">
           <form action="agree">
             <input type="checkbox"> <span> I agree to the terms and receiving notification from iintoo <a href="@">View
                 full terms</a> </span>
@@ -98,6 +114,8 @@
       </div>
 
     </div>
+
+  </div>
 
 
 

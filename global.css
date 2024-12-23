@@ -8,11 +8,21 @@ body {
   background-color: #EFF6FF;
 }
 
+label {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  display: inline;
+}
+
 .wrapper {
   padding: 50px 40px 50px 40px;
   width: 1440px;
-  margin-left: 250px;
-  margin-right: 250px;
+  margin: 0 auto;
 }
 
 
@@ -46,6 +56,10 @@ header {
   margin-left: 50px;
 }
 
+header>h1 {
+  margin-bottom: 15px;
+}
+
 h1,
 h2 {
   color: #2A4A5C;
@@ -59,8 +73,7 @@ p {
 }
 
 .registration {
-  margin-top: 40px;
-
+  margin-top: 50px;
 }
 
 .facebook {
@@ -131,7 +144,7 @@ img[alt="icon linkedin"] {
   margin-left: 120px;
 }
 
-label {
+.formEmailPhone {
   color: #AFAFAF;
 }
 
@@ -187,6 +200,10 @@ h2+p {
   margin-left: 50px;
 }
 
+.options_investor>label {
+  margin-right: 50px;
+}
+
 .additional_information1 {
   font-size: 13px;
   height: 55px;
@@ -231,6 +248,10 @@ form>span {
 
 a {
   color: #3698FB;
+}
+
+.agreeAndButton {
+  margin-left: 50px;
 }
 
 .button_create_acc {
