@@ -1,11 +1,39 @@
-* {
+*,
+*::before,
+*::after {
   font-family: 'Barlow', sans-serif;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  color: #2A4A5C;
 }
 
 body {
+  margin: 0px;
   background-color: #EFF6FF;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  color: #2A4A5C;
+  font-size: 25px
 }
 
 label {
@@ -25,60 +53,61 @@ label {
   margin: 0 auto;
 }
 
+/* left side */
 
-
-img[alt="logo"] {
-  position: absolute;
-  width: 120px;
-  height: 80px;
-  left: 60px;
-  top: 30px;
-}
-
-.wrapper-picture {
+.left-side {
+  float: left;
   position: relative;
 }
 
-img[alt="picture"] {
-  float: inline-start;
+.left-side__logo {
+  position: absolute;
+  left: 60px;
+  top: 30px;
+  width: 120px;
+  height: 80px;
+}
+
+/* right side */
+
+.right-side {
+  background-color: white;
+  width: 600px;
+  height: 1000px;
+  padding: 0px 0px 90px 0px;
+  float: right;
 }
 
 .wrapper__right_side {
-  width: 680px;
-  height: 900px;
-  padding: 0px 0px 90px 0px;
+
   float: inline-end;
   background-color: white;
+
 }
 
-header {
+.right-side__header {
   margin-top: 100px;
   margin-left: 50px;
 }
 
-header>h1 {
+.right-side__title {
   margin-bottom: 15px;
 }
 
-h1,
-h2 {
-  color: #2A4A5C;
-  font-weight: 500;
-  font-size: 25px;
-  margin-bottom: 0;
-}
 
-p {
+.right-side__text {
   color: #7B8A92;
 }
+
+/* form registration */
 
 .registration {
   margin-top: 50px;
 }
 
-.facebook {
-  color: #EEEEEE;
-  padding: 8px 50px 8px 10px;
+.registration__facebook {
+  color: #ededed;
+  padding: 8px 45px 8px 10px;
   background-color: #255A9B;
   border: none;
   font-size: 12px;
@@ -87,24 +116,18 @@ p {
   margin-right: 20px;
 }
 
-.facebook:hover {
+.registration__facebook:hover {
   box-shadow: 5px 5px 10px rgba(60, 134, 203, 0.5);
   cursor: pointer;
 }
 
-.facebook:active {
+.registration__facebook:active {
   box-shadow: none;
 }
 
-img[alt="icon facebook"] {
-  height: 15px;
-  width: 15px;
-  padding-right: 15px;
-}
-
-.linkedin {
+.registration__linkedin {
   color: #EEEEEE;
-  padding: 8px 50px 8px 10px;
+  padding: 8px 45px 8px 10px;
   background-color: #0076B6;
   border: none;
   font-size: 12px;
@@ -112,25 +135,29 @@ img[alt="icon facebook"] {
   margin-right: 50px;
 }
 
-.linkedin:hover {
+.registration__linkedin:hover {
   box-shadow: 5px 5px 10px rgba(60, 134, 203, 0.5);
   cursor: pointer;
 }
 
-.linkedin:active {
+.registration__linkedin:active {
   box-shadow: none;
 }
 
-img[alt="icon linkedin"] {
+.icon {
   height: 15px;
   width: 15px;
-  padding-right: 15px;
+  margin-right: 15px;
 }
+
+
 
 .div_line {
   margin: 50px 50px 50px 50px;
   display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 10px;
   color: #7B8A92;
 }
 
@@ -140,8 +167,8 @@ img[alt="icon linkedin"] {
   background-color: #EEEEEE;
 }
 
-.line1 {
-  margin-left: 120px;
+.line2 {
+  margin-right: 50px;
 }
 
 .formEmailPhone {
@@ -150,23 +177,25 @@ img[alt="icon linkedin"] {
 
 label[for="email"] {
   position: relative;
-  left: 50px;
-  bottom: 10px;
-  font-size: 15px;
+  left: 55px;
+  bottom: 13px;
+  font-size: 12px;
 }
 
 label[for="phone"] {
   position: relative;
-  left: 27px;
-  bottom: 10px;
-  font-size: 15px;
+  left: 28px;
+  bottom: 13px;
+  font-size: 12px;
 }
 
 #email {
   width: 210px;
-  height: 45px;
-  border: 2px solid #EEEEEE;
-  margin-left: 5PX;
+  height: 55px;
+  border: 2px solid #eeeeee;
+  margin-left: 17px;
+  font-family: 'Barlow', sans-serif;
+  color: #2A4A5C;
 }
 
 #email:hover {
@@ -175,9 +204,9 @@ label[for="phone"] {
 
 #phone {
   width: 210px;
-  height: 45px;
+  height: 55px;
   border: 2px solid #EEEEEE;
-  margin-left: -25px;
+  margin-left: -15px;
 }
 
 #phone:hover {
@@ -185,30 +214,33 @@ label[for="phone"] {
 
 }
 
-h2 {
+/* question */
+
+.choice__question {
   margin-top: 50px;
   margin-left: 50px;
 }
 
-h2+p {
+.choice__text {
   margin-left: 50px;
   margin-top: 11px;
 }
 
-.options_investor {
+/* options */
+
+.choice__options_investor {
   margin-top: 50px;
   margin-left: 50px;
 }
 
-.options_investor>label {
+.choice__options_investor>label {
   margin-right: 50px;
-  display: inline;
 }
 
 .additional_information1 {
   font-size: 13px;
-  height: 55px;
-  width: 190px;
+  height: 70px;
+  width: 250px;
   margin: 40px 0px 30px 0px;
   padding: 10px 10px 10px 10px;
   color: #AFAFAf;
@@ -217,10 +249,6 @@ h2+p {
   position: absolute;
 }
 
-div>span {
-  font-size: 13px;
-  margin-right: 30px;
-}
 
 .info {
   display: inline;
@@ -242,32 +270,34 @@ input[type="checkbox"] {
   color: #AFAFAf;
 }
 
-form>span {
+.agree-and-button__text {
   color: #AFAFAF;
   font-size: 14px;
 }
 
 a {
   color: #3698FB;
+  text-decoration: underline;
 }
 
-.agreeAndButton {
+.agree-and-button {
   margin-left: 50px;
 }
 
-.button_create_acc {
+.button-create-acc {
   color: white;
   margin-top: 50px;
-  padding: 7px 60px 7px 60px;
+  padding: 10px 60px 10px 60px;
   background-color: #3698FB;
   border: none;
+  border-radius: 5px;
 }
 
-.button_create_acc:hover {
+.button-create-acc:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
-.button_create_acc:active {
+.button-create-acc:active {
   box-shadow: none;
 }

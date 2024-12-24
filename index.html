@@ -15,19 +15,19 @@
 
   <div class="wrapper">
 
-    <div class="wrapper-picture">
-      <img src="./img/logo.svg" alt="logo">
-      <img src="./img/bg.jpg" alt="picture">
+    <div class="left-side">
+      <img class="left-side__logo" src="./img/logo.svg" alt="logo">
+      <img class="left-side__picture" src="./img/bg.jpg" alt="picture">
     </div>
 
 
-    <div class="wrapper__right_side">
+    <div class="right-side">
 
-      <header>
-        <h1>
+      <header class="right-side__header">
+        <h1 class="right-side__title">
           Get iintoo it today
         </h1>
-        <p>
+        <p class="right-side__text">
           There is no charge or obligation upon registration
         </p>
       </header>
@@ -35,8 +35,13 @@
 
 
       <div class="registration">
-        <button class="facebook"> <img src="./img/facebook.svg" alt="icon facebook">Register with Facebook</button>
-        <button class="linkedin"><img src="./img/linkedin.svg" alt="icon linkedin">Register with Linkedin</button>
+
+        <button class="registration__facebook"> <img class="icon" src="./img/facebook.svg" alt="icon facebook">
+          Register with Facebook
+        </button>
+        <button class="registration__linkedin"><img class="icon" src="./img/linkedin.svg" alt="icon linkedin">
+          Register with Linkedin
+        </button>
 
         <div class="div_line">
           <div class="line line1"></div>or<div class="line line2"></div>
@@ -48,70 +53,81 @@
           <label class="formEmailPhone" for="phone">Phone</label>
           <input type="text" id="phone" name="Phone Number">
         </form>
-
         <form action="#">
 
-          <h2>What type of investor are you?</h2>
-          <p>Select the type of investor you are below.</p>
+      </div>
 
-          <div class="options_investor">
+      <!-- question -->
 
-            <label>
-              <input type="radio" name="investor-type" value="individual" id="Individual">
-              <span>Individual</span>
-              <div class="info">!</div>
-              <div class="additional_information1">
-                I am a natural person investing on my own behalf as a sole owner, joint
-                tenant, or tenant in common.
-              </div>
-            </label>
+      <div class="choice">
 
-            <label>
-              <input type="radio" name="investor-type" value="business" id="Business">
-              <span>Business</span>
-              <div class="info">!</div>
-              <div class="additional_information1">
-                I am a natural person investing on my own behalf as a sole owner, joint
-                tenant, or tenant in common.
-              </div>
-            </label>
+        <h2 class="choice__question">What type of investor are you?</h2>
+        <p class="choice__text">Select the type of investor you are below.</p>
 
-            <label>
-              <input type="radio" name="investor-type" value="IRA" id="IRA">
-              <span>IRA</span>
-              <div class="info">!</div>
-              <div class="additional_information1">
-                I am a natural person investing on my own behalf as a sole owner, joint
-                tenant, or tenant in common.
-              </div>
-            </label>
+        <div class="choice__options_investor">
 
-            <label>
-              <input type="radio" name="investor-type" value="trust" id="Trust">
-              <span>Trust</span>
-              <div class="info">!</div>
-              <div class="additional_information1">
-                I am a natural person investing on my own behalf as a sole owner, joint
-                tenant, or tenant in common.
-              </div>
-            </label>
+          <label>
+            <input type="radio" name="investor-type" value="individual" id="Individual">
+            <span>Individual</span>
+            <span class="info">!</span>
+            <div class="additional_information1">
+              I am a natural person investing on my own behalf as a sole owner, joint
+              tenant, or tenant in common.
+            </div>
+          </label>
 
-          </div>
-        </form>
+          <label>
+            <input type="radio" name="investor-type" value="business" id="Business">
+            <span>Business</span>
+            <span class="info">!</span>
+            <div class="additional_information1">
+              I am a natural person investing on my own behalf as a sole owner, joint
+              tenant, or tenant in common.
+            </div>
+          </label>
 
+          <label>
+            <input type="radio" name="investor-type" value="IRA" id="IRA">
+            <span>IRA</span>
+            <span class="info">!</span>
+            <div class="additional_information1">
+              I am a natural person investing on my own behalf as a sole owner, joint
+              tenant, or tenant in common.
+            </div>
+          </label>
 
-        <div class="agreeAndButton">
-          <form action="agree">
-            <input type="checkbox"> <span> I agree to the terms and receiving notification from iintoo <a href="@">View
-                full terms</a> </span>
-          </form>
-
-
-          <button class="button_create_acc">Create account</button>
+          <label>
+            <input type="radio" name="investor-type" value="trust" id="Trust">
+            <span>Trust</span>
+            <span class="info">!</span>
+            <div class="additional_information1">
+              I am a natural person investing on my own behalf as a sole owner, joint
+              tenant, or tenant in common.
+            </div>
+          </label>
 
         </div>
 
       </div>
+
+
+      <div class="agree-and-button">
+        <form action="agree">
+          <input type="checkbox">
+          <span class="agree-and-button__text">
+            I agree to the terms and receiving notification from iintoo
+            <a href="@">
+              View full terms
+            </a>
+          </span>
+        </form>
+
+
+        <button class="button-create-acc">Create account</button>
+
+      </div>
+
+
 
     </div>
 
